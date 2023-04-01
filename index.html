@@ -1,388 +1,190 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="John Doe">
+
+
+
+
+
+<title>Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
     
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
+    <link rel="stylesheet" href="/css/style.css">
     
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">zy&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">zy&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
 </header>
-
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-hhhhhh" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/01/hhhhhh/" class="article-date">
-  <time class="dt-published" datetime="2023-04-01T12:12:30.000Z" itemprop="datePublished">2023-04-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/01/hhhhhh/">hhhhhh</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>a</p>
-<hr>
-<p>###dadasd</p>
-
-      
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                
+    <div class="container">
+    <div class="intro">
+        <div class="avatar">
+            <a href="/archives"><img src="/image/avatar.jpeg"></a>
+        </div>
+        <div class="nickname">Jeremy Bentham</div>
+        <div class="description"><p>Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> <br>Fusce eget urna vitae velit <em>eleifend interdum at ac</em> nisi.</p>
+</div>
+        <div class="links">
+            
+                
+                    <a class="link-item" title="Blog" href="/archives">
+                        
+                        
+                            <i class="iconfont icon-blog"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="ZhiHu" target="_blank" rel="noopener" href="https://www.zhihu.com/people/sirice">
+                        
+                        
+                            <i class="iconfont icon-zhihu"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Instagram" href="">
+                        
+                        
+                            <i class="iconfont icon-instagram"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Reddit" href="">
+                        
+                        
+                            <i class="iconfont icon-reddit"></i>
+                        
+                    </a>
+                
+                    <a class="link-item" title="Github" target="_blank" rel="noopener" href="https://github.com/Siricee">
+                        
+                        
+                            <i class="iconfont icon-github"></i>
+                        
+                    </a>
+                
+            
+        </div>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/01/hhhhhh/" data-id="clfxxpl7x0000gku7bhyz8ksf" data-title="hhhhhh" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
+</div>
 
 
-
-  
-    <article id="post-新人的c语言链表理解" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/01/%E6%96%B0%E4%BA%BA%E7%9A%84c%E8%AF%AD%E8%A8%80%E9%93%BE%E8%A1%A8%E7%90%86%E8%A7%A3/" class="article-date">
-  <time class="dt-published" datetime="2023-04-01T11:57:20.000Z" itemprop="datePublished">2023-04-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/01/%E6%96%B0%E4%BA%BA%E7%9A%84c%E8%AF%AD%E8%A8%80%E9%93%BE%E8%A1%A8%E7%90%86%E8%A7%A3/">新人的c语言链表理解</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h2 id="单链表"><a href="#单链表" class="headerlink" title="单链表"></a>单链表</h2><p><strong>一.</strong>  <strong>建立链表</strong></p>
-<p>建立链表有两种方法；</p>
-<p>（1）<strong>头插法</strong>：</p>
-<p>我们需要head头指针，和一个用开辟节点的newnode结构体指针。</p>
-<p>我们开始将head头指针指向NULL，以避免野指针出现。</p>
-<p>第一步：我要知道怎么创立一个节点，我们先对newnode指针开辟动态内存，newnode&#x3D;（struct 结构体名 *）malloc（sizeof(struct 结构体名)），然后这个newnode中得到了这个结构体空间大小一样的动态内存，我们可以通过scanf操作对里面各个成员赋值（像这样子newnode-&gt;成员名）。 做完对newnode节点里面各个成员赋值后，我们开始学怎么将这个节点连起来，变成链表。</p>
-<p>第二步：我这里需要用到循环语句while,可以一直开辟新节点，然后对它赋值。我们在while中我们将newnode-&gt;next&#x3D;head(就是说明了这个节点的下一个指向是head,然而在第一次循环中head&#x3D;NULL,所以newnode指向的下一个是NULL),然后将head&#x3D;newnode(就是说这个时候head指向的是newnode节点内容)。</p>
-<p>第三步：我们要知道在第二步中是指的是第一次循环，所以当后面循环时候，这个newnode是再被开辟新节点，和此时head指向不是NULL了，而是上一次循环中指向的节点内容。</p>
-<p>第四步：我们是要将这个头指针head返回出去的，所以在结束时候是return head,和我们定义这个函数时候这个函数的类型是结构体指针型；</p>
-<p>下面是一串部分小代码帮助大家和我说的一起理解一下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> student * <span class="title function_">create_head</span><span class="params">()</span> </span><br><span class="line">&#123;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">head</span>=</span><span class="literal">NULL</span>;</span><br><span class="line"><span class="keyword">while</span>(这里大家就自己用自己要停止循环的条件)</span><br><span class="line">&#123;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">newnode</span>=</span>(<span class="keyword">struct</span> student *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> student));</span><br><span class="line"><span class="built_in">scanf</span>( 在里面可以输入自己要输入成员的值  );</span><br><span class="line">newnode-&gt;next=head;</span><br><span class="line">head=newnode;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> head;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>2.<strong>尾插法</strong>：</p>
-<p>在这里我们需要用到head头指针与last尾指针（这里我说明一下为什么这个给头指针命名要用head，其实我们可以用其它字母命名，那是因为head是头的意思，在自己调用时候比较好调用，所以last也是同理）和用来开辟节点的newnode结构体指针。</p>
-<p>这边我也是先将head头指针和last尾指针指向NULL，以避免野指针出现。</p>
-<p>第一步：其实于头插法第一步一样，我还是要知道怎么创立一个节点，我们先对newnode指针开辟动态内存，newnode&#x3D;（struct 结构体名 *）malloc（sizeof(struct 结构体名)），然后这个newnode中得到了这个结构体空间大小一样的动态内存，我们可以通过scanf操作对里面各个成员赋值（像这样子newnode-&gt;成员名）。 做完对newnode节点里面各个成员赋值后，我们开始学怎么将这个节点连起来，变成链表。</p>
-<p>第二步：这里我们还是要用到循环语句while,在循环里面可以一直开辟新节点，并对其赋值。但是在这里与头插法不同的是，我们要做if的条件判断语句，就是if(NULL&#x3D;&#x3D;head){这里说一下这个NULL写在head前面的好处，就是可以**提醒我们多加&#x3D;**，不然大家经常会忘记加一个等号，比如head&#x3D;NULL,这个时候程序是不会保错的，所以在你运行的时候，你会发现，你没有输出值}，然后在if中执行head&#x3D;newnode，将newnode节点的位置给了head，在if后面接else{last-&gt;next&#x3D;newnode,就是说将last下一个位置是newnode}，接着在条件语句外面写last&#x3D;newnode，将last指向新节点newnode（这边说明一下，这里将last赋值给newnode，在第一次循环时候，经过条件语句后和last&#x3D;newnode意味着head，last同时指向了newnode节点。）</p>
-<p>第三步：我们是要将这个头指针head返回出去的，所以在结束时候是return head,和我们定义这个函数时候这个函数的类型是结构体指针型</p>
-<p>我们通过下面一串部分小代码和我上面说的一起理解一下：</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">struct</span> student * <span class="title function_">create_head</span><span class="params">()</span> </span><br><span class="line">&#123;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">head</span>=</span><span class="literal">NULL</span>;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">last</span>=</span><span class="literal">NULL</span>;</span><br><span class="line"><span class="keyword">while</span>(这里大家就自己用自己要停止循环的条件)</span><br><span class="line">&#123;</span><br><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">newnode</span>=</span>(<span class="keyword">struct</span> student *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> student));</span><br><span class="line"><span class="built_in">scanf</span>( 在里面可以输入自己要输入成员的值  );</span><br><span class="line"><span class="keyword">if</span>(<span class="literal">NULL</span>==head)</span><br><span class="line">&#123;</span><br><span class="line">head=newnode;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">&#123;</span><br><span class="line">last-&gt;next=newnode;</span><br><span class="line">&#125;</span><br><span class="line">last=newnode;<span class="comment">//此时newnode为最后一个节点</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">return</span> head;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>二.<strong>输出这个链表里面的内容</strong>（就是遍历链表)</p>
-<p>首先我们需要对这个链表里面传入head头指针；</p>
-<p>第一步：我们需要在函数中定义一个结构体指针p，然后将head赋值于p；</p>
-<p>第二步：我们需要用到循环语句while，在while当中我们通过p-&gt;成员用printf输出内容，在printf后面写p&#x3D;p-&gt;next，这样子就可以调用下一个节点内容，直到p&#x3D;NULL时候;</p>
-<p>第三步：我们要在while的括号中写入p，就是while（p）,意思就是p不等于NULL时候，继续循环，当p&#x3D;NULL时候，循环结束。</p>
-<p>下面我们通过一个部分小代码和我上面讲的理解一下</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">oid <span class="title function_">print</span><span class="params">(<span class="keyword">struct</span> student *head)</span></span><br><span class="line">&#123;</span><br><span class="line">       <span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">p</span>;</span></span><br><span class="line">       p=head;</span><br><span class="line">       <span class="keyword">while</span>(p!=<span class="literal">NULL</span>)</span><br><span class="line">      &#123;</span><br><span class="line">       <span class="built_in">printf</span>(<span class="string">&quot;    &quot;</span>,p-&gt;成员);</span><br><span class="line">       p=p-&gt;next;</span><br><span class="line">      &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>三.<strong>给链表插入一个新的节点</strong></p>
-<p>我这里讲的是，在给定条件的链表中的节点插入一个新的节点。</p>
-<p>在开始时候我们需要定义一个结构体指针p1和p2；</p>
-<p>第一步：我先创立一个要插入的节点insertnode，并对成员赋值，其中insertnode-&gt;next&#x3D;NULL；</p>
-<p>第二步：我们将指针p1指向头指针head，p2&#x3D;p1-&gt;next(将p2指向p1的下一个节点位置)；</p>
-<p>第三步：我这里需要用到循环语句while，while括号当中的表达式为p2！&#x3D;NULL；然后我们在while当中用到条件语句if来判断p2是否已经指向到你想要插入的地方的后面最近的地方(这里打个比方，我们要在3和4中间插入一个数，这个时候p2指向的就是4前面的地方和3后面的地方，此时p2指向的就是4，p1指向的就是3），如果是break跳出，不是的就将p1&#x3D;p2(此时p1跟p2指向同一个节点)，然后p2&#x3D;p2-&gt;next(将p2指向p2的下一个节点位置)，这样子我们就可以实现从头到我们要找的节点查找。</p>
-<p>第四步：我们通过第三步得到了要插入的节点位置（就是p1的前面，p2的后面），但是我们还要需要做一个判断就是p2是否为head头指针，如果是的话，我们要将insertnode-&gt;head,head&#x3D;insertnode,这样子使得insertnode变成头指针head，如果p2不是head，那么p1-&gt;next&#x3D;insertnode（将p1的下一个位置指向insertnode），insertnode-&gt;next&#x3D;p2(将insertnode的下一个位置指向p2)。这样子我们就实现了插入。</p>
-<p>下面我们通过一个部分小代码跟我上面说的一起理解一下</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">void</span> <span class="title function_">print</span><span class="params">(<span class="keyword">struct</span> student *head)</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">insertnode</span>=</span>(<span class="keyword">struct</span> student *)<span class="built_in">malloc</span>(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> student));</span><br><span class="line">    <span class="built_in">scanf</span>(<span class="string">&quot;&quot;</span>,insertnode-&gt;成员); </span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">student</span> *<span class="title">p1</span>,*<span class="title">p2</span>;</span></span><br><span class="line">    p1=head;</span><br><span class="line">    p2=p1-&gt;next;</span><br><span class="line">    <span class="keyword">while</span>(p2!=<span class="literal">NULL</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(根据条件自己判断)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">break</span>; </span><br><span class="line">        &#125;</span><br><span class="line">        p1=p2;</span><br><span class="line">        p2=p2-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(p2==head)</span><br><span class="line">    &#123;</span><br><span class="line">        insertnoad-&gt;next=head;</span><br><span class="line">        head=insertnode;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        p1-&gt;next=insertnode;</span><br><span class="line">        insertnode-&gt;next=p2;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>四.<strong>删除一个指定节点</strong></p>
-<p>我这里讲的是，在给定条件的链表中删除其中的一个节点</p>
-<p>在开始时候我们需要定义一个结构体指针p1和p2；</p>
-<p>第一步：p1&#x3D;head，然后p2&#x3D;p1-&gt;next;</p>
-<p>第二步：我们还是需要一个循环语句while，while括号当中的表达式为p2！&#x3D;NULL；在while中，我们使用if条件语句找那个要删除的节点p2位置，没有满足这个if条件语句的话，我们就将p1&#x3D;p2，p2&#x3D;p2-&gt;next。出了这个while循环后，我们得到了p2的最终指向，但是我们还是不清楚p2是否指向NULL还是head头指针，所以我们还是需要用if语句判断一下，如果p2是指向head头指针，head&#x3D;head-&gt;next，然后释放p2的内存,如果不是p2指向head和NULL,那么p1-&gt;next&#x3D;p2-&gt;next,释放p2的内存，如果p2是指向NULL，那么就打印出找不到这个要删除的节点。</p>
-<p>下面通过一个小部分代码一起和我讲的理解</p>
-<figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">oid <span class="title function_">shanchu</span><span class="params">(<span class="keyword">struct</span> node *head,<span class="type">char</span> num[]<span class="comment">//这个是你要删除的节点所满足的)</span></span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params"><span class="keyword">struct</span> node *p1=head;</span></span><br><span class="line"><span class="params"><span class="keyword">struct</span> node *p2=p1-&gt;next;</span></span><br><span class="line"><span class="params"><span class="keyword">while</span>(p2!=<span class="literal">NULL</span>)</span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params"><span class="keyword">if</span>(<span class="built_in">strcmp</span>(p2-&gt;num,num)==<span class="number">0</span>)<span class="comment">//判断条件，这个根据题目不同的要求</span></span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params"><span class="keyword">break</span>;</span></span><br><span class="line"><span class="params">&#125;</span></span><br><span class="line"><span class="params">p1=p2;</span></span><br><span class="line"><span class="params">p2=p2-&gt;next;</span></span><br><span class="line"><span class="params">&#125;</span></span><br><span class="line"><span class="params"><span class="keyword">if</span>(p2==head)</span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params">    head=head-&gt;next;</span></span><br><span class="line"><span class="params">    <span class="built_in">free</span>(p2);<span class="comment">//将p2的内存释放</span></span></span><br><span class="line"><span class="params">&#125;</span></span><br><span class="line"><span class="params"><span class="keyword">else</span> <span class="keyword">if</span>(p2!=<span class="literal">NULL</span>)<span class="comment">//如果这个p2==NULL，说明了没有找到删除节点</span></span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params">    p1-&gt;next=p2-&gt;next;</span></span><br><span class="line"><span class="params">    <span class="built_in">free</span>(p2);<span class="comment">//将p2的内存释放</span></span></span><br><span class="line"><span class="params">&#125;</span></span><br><span class="line"><span class="params"><span class="keyword">else</span></span></span><br><span class="line"><span class="params">&#123;</span></span><br><span class="line"><span class="params">    <span class="built_in">printf</span>(<span class="string">&quot;Not find node&quot;</span>);</span></span><br><span class="line"><span class="params">&#125;</span></span><br><span class="line"><span class="params">&#125;</span></span><br></pre></td></tr></table></figure>
-
-<p>上面是我这个新人对c语言中单链表个人理解，可能很多地方都有问题，仅供参考，日后发现有错误，我会及时加以更正。</p>
-<p>——————————————————-谢谢观看————————————————————-</p>
-
-      
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© John Doe | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/01/%E6%96%B0%E4%BA%BA%E7%9A%84c%E8%AF%AD%E8%A8%80%E9%93%BE%E8%A1%A8%E7%90%86%E8%A7%A3/" data-id="clfxxnvkw0001bou71syo5k6l" data-title="新人的c语言链表理解" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-我的文章" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/01/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/" class="article-date">
-  <time class="dt-published" datetime="2023-04-01T06:49:15.000Z" itemprop="datePublished">2023-04-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/01/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/">我的文章</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <hr>
-<p>##文章</p>
-<p>~<br>~~<br>~<br>~~<br>~~<br>~<br>##第一站</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/01/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/" data-id="clfxxnvky0002bou75h10dgf9" data-title="我的文章" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/04/01/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-04-01T06:44:58.277Z" itemprop="datePublished">2023-04-01</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/04/01/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/04/01/hello-world/" data-id="clfxxnvkq0000bou7hwbe6lob" data-title="Hello World" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">April 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/04/01/hhhhhh/">hhhhhh</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/01/%E6%96%B0%E4%BA%BA%E7%9A%84c%E8%AF%AD%E8%A8%80%E9%93%BE%E8%A1%A8%E7%90%86%E8%A7%A3/">新人的c语言链表理解</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/01/%E6%88%91%E7%9A%84%E6%96%87%E7%AB%A0/">我的文章</a>
-          </li>
-        
-          <li>
-            <a href="/2023/04/01/hello-world/">Hello World</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
 </footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
 </body>
+
 </html>
